@@ -13,6 +13,7 @@
 		46519E7424D2B4C50077403E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46519E7324D2B4C50077403E /* Assets.xcassets */; };
 		46519E7724D2B4C50077403E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46519E7624D2B4C50077403E /* Preview Assets.xcassets */; };
 		46519E7A24D2B4C50077403E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46519E7824D2B4C50077403E /* LaunchScreen.storyboard */; };
+		46890C7024D5471100C57AB5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46890C6F24D5471100C57AB5 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		46519E7624D2B4C50077403E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46519E7924D2B4C50077403E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46519E7B24D2B4C50077403E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46890C6F24D5471100C57AB5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				46519E6D24D2B4C30077403E /* AppDelegate.swift */,
 				46519E6F24D2B4C30077403E /* SceneDelegate.swift */,
+				46890C6F24D5471100C57AB5 /* CardView.swift */,
 				46519E7124D2B4C30077403E /* ContentView.swift */,
 				46519E7324D2B4C50077403E /* Assets.xcassets */,
 				46519E7824D2B4C50077403E /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				46519E6E24D2B4C30077403E /* AppDelegate.swift in Sources */,
 				46519E7024D2B4C30077403E /* SceneDelegate.swift in Sources */,
+				46890C7024D5471100C57AB5 /* CardView.swift in Sources */,
 				46519E7224D2B4C30077403E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

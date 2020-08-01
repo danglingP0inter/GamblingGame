@@ -12,20 +12,16 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var credits = 1000
-    @State private var index1 = 0
-    @State private var index2 = 1
-    @State private var index3 = 2
+    @State private var indices = [0, 1, 2]
     
-    private var images: [Image] = [Image("apple"),
-                                   Image("donut"),
-                                   Image("lemon")]
+    var imageNames = ["apple", "donut", "lemon"]
     
     func onSpin() {
-        index1 = Int.random(in: 0..<3)
-        index2 = Int.random(in: 0..<3)
-        index3 = Int.random(in: 0..<3)
+        indices[0] = Int.random(in: 0..<3)
+        indices[1] = Int.random(in: 0..<3)
+        indices[2] = Int.random(in: 0..<3)
         
-        if (index1 == index2 && index2 == index3) {
+        if (indices[0] == indices[1] && indices[1] == indices[2]) {
             credits += 100
         } else {
             credits -= 50
@@ -71,23 +67,12 @@ struct ContentView: View {
                 Spacer()
 
                 HStack {
-                    images[index1]
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
+                    CardView(imageName: Binding.constant(imageNames[indices[0]]))
                     
-                    images[index2]
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
+                    CardView(imageName: Binding.constant(imageNames[indices[1]]))
                     
-                    images[index3]
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
+                    CardView(imageName: Binding.constant(imageNames[indices[2]]))
+                    
                 }.padding(10)       // alternatively a spacer would also work
                 
                 Spacer()
